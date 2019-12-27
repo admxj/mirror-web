@@ -50,7 +50,7 @@
 								{% raw %}
 								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
 									<td class="col-md-8">
-										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
+										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right"
 											:data-content="mir.description" :href="getURL(mir)">
 											{{mir.name}}
 											<span class="label label-new" v-if='mir.is_new'>new</span>
@@ -91,9 +91,9 @@
 						<div class="thuhidden">
 							<h4> <span class="fa fa-link"></span> 域名选择 </h4>
 							<ul>
-								<li><a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a> 自动选择 </li>
-								<li><a href="https://mirrors6.tuna.tsinghua.edu.cn/">https://mirrors6.tuna.tsinghua.edu.cn/</a> 只解析 IPv6</li>
-								<li><a href="https://mirrors4.tuna.tsinghua.edu.cn/">https://mirrors4.tuna.tsinghua.edu.cn/</a> 只解析 IPv4</li>
+								<li><a href="https://mirrors.admxj.cn/">https://mirrors.admxj.cn/</a> 自动选择 </li>
+								<li><a href="https://mirrors6.admxj.cn/">https://mirrors6.admxj.cn/</a> 只解析 IPv6</li>
+								<li><a href="https://mirrors4.admxj.cn/">https://mirrors4.admxj.cn/</a> 只解析 IPv4</li>
 							</ul>
 						</div>
 						{% unless page.legacy %}
@@ -119,7 +119,7 @@
 								<li><a href="/help/">使用帮助</a></li>
 								<li><a href="/status/#server-status">服务器状态</a></li>
 								<li><a href="/status/#syncing-status">同步状态</a></li>
-								<li class="thuhidden"><a href="https://tuna.moe/">清华大学 TUNA 协会</a></li>
+								<li class="thuhidden"><a href="https://tuna.moe/">TUNA 协会</a></li>
 								<li><a href="https://github.com/tuna/tunasync">镜像管理器源码</a></li>
 								<li><a href="https://github.com/tuna/tunasync-scripts">自定义镜像脚本</a></li>
 							</ul>
